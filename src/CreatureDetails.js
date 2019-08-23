@@ -2,7 +2,8 @@ import React from 'react';
 import './image-display.css';
 import { Link } from 'react-router-dom';
 
-const CreatureDetails = ({ id, name, image, bio, type }) => {
+const CreatureDetails = ({ id, name, image, bio, type, creature }) => {
+  console.log(id, type)
   return (
     <div>
       <Link to={`/${type}`} className='back-btn'>◀ back</Link>
